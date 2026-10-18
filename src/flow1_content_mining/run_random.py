@@ -16,7 +16,7 @@ def main() -> None:
     )
     parser.add_argument("--count", type=int, default=100)
     parser.add_argument("--seed", type=int)
-    parser.add_argument("--max-searches", type=int, default=30)
+    parser.add_argument("--max-searches", type=int, default=200)
     parser.add_argument("--raw-output", type=Path, default=Path("data/raw/songs.json"))
     parser.add_argument("--output", type=Path, default=Path("data/processed"))
     args = parser.parse_args()
@@ -25,6 +25,12 @@ def main() -> None:
     songs = crawl_random_to_file(
         args.count, args.raw_output, args.seed, args.max_searches
     )
+    if len(songs) < args.count:
+        print(
+            f"Collected {len(songs)}/{args.count} songs with lyrics. "
+            f"Saved to {args.raw_output}. Rerun this command later to continue."
+        )
+        return
     print(f"Collected {len(songs)} songs; starting Flow 1")
     run(args.raw_output, args.output)
     print(f"Flow 1 artifacts saved to {args.output}")

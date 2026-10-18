@@ -56,27 +56,39 @@ Tạo `.env` từ `.env.example` và điền thông tin API khi cần chạy cra
 
 ## Chạy Flow 2 (HOA)
 
-Tạo `data/raw/youtube_urls.txt`, mỗi dòng một URL video nhạc. Collector lưu metadata video (tiêu đề, mô tả, kênh, tags) và bình luận:
+Flow 2 cần ghép mỗi video YouTube với `song_id` từ `data/raw/songs.json`. Tạo `data/raw/youtube_video_map.csv`:
+
+```csv
+song_id,youtube_url
+2476188,https://www.youtube.com/watch?v=VIDEO_ID
+```
+
+Thay `2476188` bằng ID thật trong file Flow 1 và điền URL video đúng bài đó. Một bài có thể có nhiều dòng video. Collector lấy metadata, comment và giữ `song_id` trên từng comment:
 
 ```bash
 python -m src.data_ingestion.youtube_crawler \
-  --urls-file data/raw/youtube_urls.txt \
+  --urls-file data/raw/youtube_video_map.csv \
+  --songs-file data/raw/songs.json \
   --output-dir data/raw \
   --max-comments 500 \
   --sort-by recent
 ```
 
-Mặc định collector lấy tối đa 500 bình luận mới nhất mỗi video. Dùng `--sort-by popular` để ưu tiên bình luận phổ biến, hoặc `--max-comments 1000` để tăng giới hạn.
+Mặc định collector lấy tối đa 500 bình luận mới nhất mỗi video. Dùng `--sort-by popular` để ưu tiên bình luận phổ biến, hoặc `--max-comments 1000` để tăng giới hạn. Video lỗi được ghi vào `youtube_crawl_errors.json`; video khác vẫn tiếp tục được xử lý.
 
-Chạy phân tích cảm xúc trên file bình luận vừa thu thập:
+Phân tích cảm xúc và tổng hợp theo bài hát:
 
 ```bash
 python -m src.flow2_social_mining.pipeline \
   --input data/raw/youtube_comments.jsonl \
+  --songs-input data/raw/songs.json \
+  --videos-input data/raw/youtube_videos.json \
   --output-dir data/processed
 ```
 
-Kết quả gồm `youtube_comments_scored.jsonl` với nhãn/xác suất cảm xúc từng bình luận và `social_valence.json` với điểm trung bình theo video trong khoảng `[-1, 1]`. Model mặc định `BaoNhan/xlm-roberta-base-UITVSMEC` được huấn luyện cho cảm xúc văn bản tiếng Việt. Có thể đổi model qua `HF_SENTIMENT_MODEL` trong `.env`; nên đánh giá lại trên comment âm nhạc của project trước khi dùng điểm số để xếp hạng.
+Flow 2 tạo `youtube_comments_scored.jsonl` (nhãn, điểm từng cảm xúc và valence mỗi comment), `youtube_video_valence.json` (tổng hợp từng video) và `social_valence.json` (tổng hợp từng bài hát, đúng định dạng để app dùng). Valence comment được tính bằng tổng xác suất cảm xúc tích cực trừ tổng xác suất tiêu cực; điểm bài hát là trung bình valence comment trong khoảng `[-1, 1]`. Bài không có comment được ghi với `social_valence_score: null`, không giả định là trung tính.
+
+Model mặc định `BaoNhan/xlm-roberta-base-UITVSMEC` được huấn luyện trên văn bản mạng xã hội tiếng Việt. Nếu comment chủ yếu bằng tiếng Anh hoặc ngôn ngữ khác, hãy đổi `HF_SENTIMENT_MODEL` trong `.env` sang model phù hợp và đánh giá lại trên comment của project trước khi dùng điểm để xếp hạng.
 
 ## Chạy Flow 1
 
@@ -111,19 +123,19 @@ Pipeline ghi ra:
 - `semantic_vectors.jsonl`: một dòng mỗi bài, gồm metadata và `semantic_vector` để Flow 3 đọc trực tiếp.
 - `semantic_similarity.csv`: ma trận cosine similarity giữa các bài hát; Flow 3 có thể dùng ma trận này để tạo cạnh (ví dụ ngưỡng `> 0.8`).
 
-Mỗi dòng `semantic_vectors.jsonl` có `song_id`, `title`, `artist`, `writers`, `genres`, `vector_model`, `vector_dimension` và `semantic_vector`. Metadata tùy chọn như album, ngày phát hành và URL nguồn được giữ lại nếu có. Lyrics không được chép vào file vector.
+Mỗi dòng `semantic_vectors.jsonl` có `song_id`, `title`, `artist`, `writers`, `genres`, `vector_model`, `vector_dimension` và `semantic_vector`. Metadata nguồn như album, ngày phát hành, Genius URL, nguồn lyrics và điểm khớp LRCLIB được giữ lại nếu có. Lyrics không được chép vào file vector.
 
 Mặc định SBERT dùng `sentence-transformers/all-MiniLM-L6-v2`. Có thể đổi bằng biến môi trường `SBERT_MODEL`. Pipeline yêu cầu trường `song_id` và `lyrics`; metadata còn thiếu được ghi thành giá trị rỗng. `search.py` cung cấp tìm kiếm theo ngữ nghĩa và bộ lọc artist/writer/genre. TF-IDF và SBERT tìm kiếm bằng cosine similarity, sắp xếp kết quả giảm dần.
 
-### Crawl ngẫu nhiên 100 bài từ Genius và chạy Flow 1
+### Lấy mẫu bài từ Genius và chạy Flow 1
 
-Đặt `GENIUS_ACCESS_TOKEN` trong `.env`, sau đó chạy:
+Đặt `GENIUS_ACCESS_TOKEN` trong `.env` để tìm metadata qua Genius Developer API:
 
 ```bash
 python -m src.flow1_content_mining.run_random --count 100
 ```
 
-Lệnh này lấy mẫu ngẫu nhiên từ kết quả tìm kiếm Genius theo nhiều từ khóa và trang, lưu dữ liệu thô vào `data/raw/songs.json`, rồi tạo các artifact ở `data/processed/`. Đây là mẫu từ kết quả tìm kiếm, không phải mẫu ngẫu nhiên trên toàn bộ kho Genius. Có thể truyền `--seed 42` để tái lập thứ tự lấy mẫu trong cùng tập kết quả. Chỉ dùng dữ liệu lyrics theo điều khoản của Genius và nguồn bản quyền; không commit dữ liệu thô.
+Lệnh này lấy metadata bài hát qua Genius Developer API, tìm lyrics khớp trên LRCLIB, lưu dữ liệu thô vào `data/raw/songs.json`, rồi tạo artifact ở `data/processed/`. Đây là mẫu từ kết quả tìm kiếm, không phải mẫu ngẫu nhiên trên toàn bộ Genius. LRCLIB có thể không có lời cho một số bài nên số lượng đầu ra có thể thấp hơn yêu cầu. Dữ liệu thô ghi `metadata_source`, `lyrics_source`, ID và URL của hai nguồn. Có thể truyền `--seed 42` để tái lập thứ tự mẫu trong cùng tập tìm kiếm. Không commit dữ liệu lyrics lên GitHub.
 
 ## Thành viên và phân công flow
 
