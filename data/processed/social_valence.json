@@ -1,0 +1,1825 @@
+[
+  {
+    "song_id": "2476188",
+    "title": "Don’t You Need Somebody",
+    "artist": "RedOne",
+    "video_count": 1,
+    "video_ids": [
+      "6fBZBntjEOA"
+    ],
+    "comment_count": 500,
+    "social_valence_score": 0.41873682794719935,
+    "sentiment_counts": {
+      "enjoyment": 388,
+      "other": 54,
+      "sadness": 19,
+      "disgust": 36,
+      "fear": 3
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "4034881",
+    "title": "heavy metal",
+    "artist": "Bring Me The Horizon",
+    "video_count": 1,
+    "video_ids": [
+      "JogLvpzvn4Q"
+    ],
+    "comment_count": 344,
+    "social_valence_score": 0.06603002417047486,
+    "sentiment_counts": {
+      "enjoyment": 182,
+      "disgust": 70,
+      "other": 57,
+      "sadness": 35
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "152599",
+    "title": "Teachers",
+    "artist": "Daft Punk",
+    "video_count": 1,
+    "video_ids": [
+      "3yq-NFiEywo"
+    ],
+    "comment_count": 500,
+    "social_valence_score": 0.15176047358009964,
+    "sentiment_counts": {
+      "other": 109,
+      "enjoyment": 287,
+      "sadness": 68,
+      "disgust": 36
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "7165570",
+    "title": "Yebba’s Heartbreak",
+    "artist": "Drake",
+    "video_count": 1,
+    "video_ids": [
+      "9rlW2rUzyn0"
+    ],
+    "comment_count": 500,
+    "social_valence_score": 0.12850994687899947,
+    "sentiment_counts": {
+      "enjoyment": 282,
+      "disgust": 23,
+      "other": 82,
+      "sadness": 113
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "113105",
+    "title": "Harder Better Faster Stronger",
+    "artist": "Daft Punk",
+    "video_count": 1,
+    "video_ids": [
+      "yydNF8tuVmU"
+    ],
+    "comment_count": 500,
+    "social_valence_score": 0.2696807239688933,
+    "sentiment_counts": {
+      "enjoyment": 338,
+      "other": 101,
+      "sadness": 24,
+      "disgust": 37
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "2472220",
+    "title": "How Great",
+    "artist": "Chance the Rapper",
+    "video_count": 1,
+    "video_ids": [
+      "l1kupzUz_pc"
+    ],
+    "comment_count": 301,
+    "social_valence_score": 0.31382502877831064,
+    "sentiment_counts": {
+      "enjoyment": 212,
+      "sadness": 22,
+      "disgust": 23,
+      "other": 43,
+      "fear": 1
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "9614079",
+    "title": "THUNDER Y LIGHTNING",
+    "artist": "Bad Bunny",
+    "video_count": 1,
+    "video_ids": [
+      "qZrgswgDZt8"
+    ],
+    "comment_count": 418,
+    "social_valence_score": 0.24151946439487976,
+    "sentiment_counts": {
+      "enjoyment": 272,
+      "other": 57,
+      "sadness": 31,
+      "disgust": 55,
+      "fear": 3
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "13560168",
+    "title": "Fortworth",
+    "artist": "Drake",
+    "video_count": 1,
+    "video_ids": [
+      "Fg1yLqL8clo"
+    ],
+    "comment_count": 500,
+    "social_valence_score": 0.15176066647237166,
+    "sentiment_counts": {
+      "enjoyment": 306,
+      "other": 70,
+      "sadness": 92,
+      "disgust": 30,
+      "fear": 2
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "2965955",
+    "title": "Best Friend",
+    "artist": "Rex Orange County",
+    "video_count": 1,
+    "video_ids": [
+      "OqBuXQLR4Y8"
+    ],
+    "comment_count": 500,
+    "social_valence_score": 0.14435595674626528,
+    "sentiment_counts": {
+      "enjoyment": 290,
+      "sadness": 99,
+      "disgust": 15,
+      "other": 95,
+      "fear": 1
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "12381218",
+    "title": "Soda Pop (Sing-Along)",
+    "artist": "Saja Boys",
+    "video_count": 1,
+    "video_ids": [
+      "geaYX3Ax7v4"
+    ],
+    "comment_count": 0,
+    "social_valence_score": null,
+    "sentiment_counts": {},
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "2817811",
+    "title": "pain",
+    "artist": "Lil Peep",
+    "video_count": 1,
+    "video_ids": [
+      "RDf1RelnPWk"
+    ],
+    "comment_count": 500,
+    "social_valence_score": 0.07470169597677886,
+    "sentiment_counts": {
+      "disgust": 37,
+      "sadness": 70,
+      "enjoyment": 240,
+      "other": 150,
+      "fear": 2,
+      "anger": 1
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "133035",
+    "title": "Rockstar",
+    "artist": "Nickelback",
+    "video_count": 1,
+    "video_ids": [
+      "DmeUuoxyt_E"
+    ],
+    "comment_count": 500,
+    "social_valence_score": 0.1957671324936673,
+    "sentiment_counts": {
+      "other": 89,
+      "enjoyment": 300,
+      "disgust": 54,
+      "sadness": 57
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "51371",
+    "title": "Stereo Hearts",
+    "artist": "Gym Class Heroes",
+    "video_count": 1,
+    "video_ids": [
+      "T3E9Wjbq44E"
+    ],
+    "comment_count": 500,
+    "social_valence_score": 0.22328569019492717,
+    "sentiment_counts": {
+      "enjoyment": 307,
+      "sadness": 66,
+      "other": 110,
+      "disgust": 15,
+      "fear": 2
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "5049949",
+    "title": "Blinding Lights",
+    "artist": "The Weeknd",
+    "video_count": 1,
+    "video_ids": [
+      "4NRXx6U8ABQ"
+    ],
+    "comment_count": 500,
+    "social_valence_score": 0.23160718442872166,
+    "sentiment_counts": {
+      "sadness": 41,
+      "enjoyment": 293,
+      "other": 141,
+      "disgust": 23,
+      "fear": 2
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "8122123",
+    "title": "BREAK MY SOUL",
+    "artist": "Beyoncé",
+    "video_count": 1,
+    "video_ids": [
+      "s14ECLs-9CA"
+    ],
+    "comment_count": 46,
+    "social_valence_score": 0.3837601292939128,
+    "sentiment_counts": {
+      "enjoyment": 33,
+      "other": 10,
+      "disgust": 1,
+      "sadness": 2
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "1114",
+    "title": "Country Grammar (Hot Shit)",
+    "artist": "Nelly",
+    "video_count": 1,
+    "video_ids": [
+      "zDUYXlev5CI"
+    ],
+    "comment_count": 500,
+    "social_valence_score": 0.2934431943288073,
+    "sentiment_counts": {
+      "enjoyment": 346,
+      "sadness": 39,
+      "other": 72,
+      "disgust": 41,
+      "fear": 2
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "8779646",
+    "title": "Last Night",
+    "artist": "Morgan Wallen",
+    "video_count": 1,
+    "video_ids": [
+      "bUjPPBxbQrQ"
+    ],
+    "comment_count": 500,
+    "social_valence_score": 0.3886524673579261,
+    "sentiment_counts": {
+      "enjoyment": 379,
+      "other": 53,
+      "sadness": 47,
+      "disgust": 19,
+      "fear": 2
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "2148341",
+    "title": "I Like",
+    "artist": "Tink",
+    "video_count": 1,
+    "video_ids": [
+      "Yp9Vo0fU8g4"
+    ],
+    "comment_count": 372,
+    "social_valence_score": 0.40959662639896477,
+    "sentiment_counts": {
+      "enjoyment": 282,
+      "sadness": 28,
+      "other": 48,
+      "disgust": 14
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "147341",
+    "title": "Indie Rokkers",
+    "artist": "MGMT",
+    "video_count": 1,
+    "video_ids": [
+      "LDd0OguXl1s"
+    ],
+    "comment_count": 0,
+    "social_valence_score": null,
+    "sentiment_counts": {},
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "8444212",
+    "title": "Alone",
+    "artist": "The Cure",
+    "video_count": 1,
+    "video_ids": [
+      "7BvcayRnpDE"
+    ],
+    "comment_count": 500,
+    "social_valence_score": 0.30644739419873807,
+    "sentiment_counts": {
+      "sadness": 95,
+      "enjoyment": 351,
+      "other": 38,
+      "fear": 1,
+      "disgust": 15
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "3191183",
+    "title": "Love Me or Leave Me Alone",
+    "artist": "Dustin Lynch",
+    "video_count": 1,
+    "video_ids": [
+      "q3O2_J1LT_w"
+    ],
+    "comment_count": 500,
+    "social_valence_score": 0.10949654693808407,
+    "sentiment_counts": {
+      "enjoyment": 303,
+      "sadness": 134,
+      "other": 52,
+      "disgust": 11
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "105922",
+    "title": "Hey, Soul Sister",
+    "artist": "Train",
+    "video_count": 1,
+    "video_ids": [
+      "kVpv8-5XWOI"
+    ],
+    "comment_count": 499,
+    "social_valence_score": 0.27906270535851274,
+    "sentiment_counts": {
+      "sadness": 59,
+      "enjoyment": 326,
+      "other": 90,
+      "disgust": 24
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "54515",
+    "title": "Welcome To Heartbreak",
+    "artist": "Kanye West",
+    "video_count": 1,
+    "video_ids": [
+      "tX3IvpH6loc"
+    ],
+    "comment_count": 500,
+    "social_valence_score": 0.11769672876689583,
+    "sentiment_counts": {
+      "other": 83,
+      "sadness": 94,
+      "enjoyment": 282,
+      "disgust": 40,
+      "fear": 1
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "2442052",
+    "title": "Come and See Me",
+    "artist": "PARTYNEXTDOOR",
+    "video_count": 1,
+    "video_ids": [
+      "Ockhq8E2FrA"
+    ],
+    "comment_count": 500,
+    "social_valence_score": 0.28802349819615486,
+    "sentiment_counts": {
+      "enjoyment": 318,
+      "other": 127,
+      "sadness": 34,
+      "disgust": 20,
+      "fear": 1
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "4127459",
+    "title": "The Birthday Party",
+    "artist": "The 1975",
+    "video_count": 1,
+    "video_ids": [
+      "o5RYo3TnhG8"
+    ],
+    "comment_count": 500,
+    "social_valence_score": 0.28615873452834784,
+    "sentiment_counts": {
+      "enjoyment": 332,
+      "other": 81,
+      "disgust": 27,
+      "sadness": 60
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "4348897",
+    "title": "Girls Need Love (Remix)",
+    "artist": "Summer Walker",
+    "video_count": 1,
+    "video_ids": [
+      "TP3moIiyZFI"
+    ],
+    "comment_count": 500,
+    "social_valence_score": 0.300536452582106,
+    "sentiment_counts": {
+      "sadness": 42,
+      "other": 102,
+      "enjoyment": 337,
+      "disgust": 19
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "1188807",
+    "title": "Sensuella Isabella",
+    "artist": "Tomas Ledin",
+    "video_count": 1,
+    "video_ids": [
+      "fTY4BGpMV6A"
+    ],
+    "comment_count": 0,
+    "social_valence_score": null,
+    "sentiment_counts": {},
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "3902284",
+    "title": "Chanel (Go Get It)",
+    "artist": "Young Thug",
+    "video_count": 1,
+    "video_ids": [
+      "da4Z0sgURMQ"
+    ],
+    "comment_count": 500,
+    "social_valence_score": 0.22870769173745065,
+    "sentiment_counts": {
+      "enjoyment": 327,
+      "disgust": 54,
+      "other": 80,
+      "sadness": 33,
+      "fear": 6
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "2826952",
+    "title": "the ends",
+    "artist": "Travis Scott",
+    "video_count": 1,
+    "video_ids": [
+      "hF1sqWiqppE"
+    ],
+    "comment_count": 500,
+    "social_valence_score": 0.1634987941980362,
+    "sentiment_counts": {
+      "enjoyment": 288,
+      "other": 112,
+      "sadness": 53,
+      "disgust": 46,
+      "fear": 1
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "3337",
+    "title": "Serial Killa",
+    "artist": "Snoop Dogg",
+    "video_count": 1,
+    "video_ids": [
+      "MElq9s-Hj1A"
+    ],
+    "comment_count": 500,
+    "social_valence_score": 0.2498206842308864,
+    "sentiment_counts": {
+      "enjoyment": 334,
+      "disgust": 60,
+      "other": 81,
+      "sadness": 22,
+      "anger": 1,
+      "fear": 2
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "5153520",
+    "title": "Tief in die Nacht",
+    "artist": "Samra",
+    "video_count": 1,
+    "video_ids": [
+      "kHcEXHNbvAo"
+    ],
+    "comment_count": 500,
+    "social_valence_score": 0.2835937882363796,
+    "sentiment_counts": {
+      "enjoyment": 350,
+      "disgust": 48,
+      "other": 72,
+      "sadness": 30
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "3577658",
+    "title": "the remedy for a broken heart (why am I so in love)",
+    "artist": "XXXTENTACION",
+    "video_count": 1,
+    "video_ids": [
+      "4ZN2WmkCq_8"
+    ],
+    "comment_count": 500,
+    "social_valence_score": -0.1260325232455507,
+    "sentiment_counts": {
+      "sadness": 192,
+      "enjoyment": 220,
+      "other": 66,
+      "disgust": 20,
+      "fear": 2
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "7052536",
+    "title": "강박 (Red Lights)",
+    "artist": "Stray Kids",
+    "video_count": 1,
+    "video_ids": [
+      "AOwyd6l8KvM"
+    ],
+    "comment_count": 500,
+    "social_valence_score": 0.24858240944612772,
+    "sentiment_counts": {
+      "enjoyment": 329,
+      "disgust": 32,
+      "other": 71,
+      "sadness": 63,
+      "fear": 4,
+      "anger": 1
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "6547",
+    "title": "There U Go",
+    "artist": "2Pac",
+    "video_count": 1,
+    "video_ids": [
+      "JXBLvVZG4C0"
+    ],
+    "comment_count": 500,
+    "social_valence_score": 0.27878982332348823,
+    "sentiment_counts": {
+      "enjoyment": 336,
+      "sadness": 43,
+      "other": 74,
+      "disgust": 45,
+      "fear": 2
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "245",
+    "title": "Money to Blow",
+    "artist": "Birdman",
+    "video_count": 1,
+    "video_ids": [
+      "NjNBC4mC5y4"
+    ],
+    "comment_count": 500,
+    "social_valence_score": 0.058369768445380034,
+    "sentiment_counts": {
+      "sadness": 41,
+      "enjoyment": 261,
+      "disgust": 95,
+      "other": 96,
+      "anger": 1,
+      "fear": 6
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "255826",
+    "title": "Say Something",
+    "artist": "A Great Big World",
+    "video_count": 1,
+    "video_ids": [
+      "-2U0Ivkn2Ds"
+    ],
+    "comment_count": 500,
+    "social_valence_score": -0.02954895863868296,
+    "sentiment_counts": {
+      "enjoyment": 236,
+      "sadness": 176,
+      "other": 74,
+      "disgust": 13,
+      "fear": 1
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "122408",
+    "title": "come in alone",
+    "artist": "my bloody valentine",
+    "video_count": 1,
+    "video_ids": [
+      "uTDZ0Y--5Zg"
+    ],
+    "comment_count": 185,
+    "social_valence_score": 0.26031959092848606,
+    "sentiment_counts": {
+      "other": 28,
+      "enjoyment": 127,
+      "sadness": 22,
+      "disgust": 8
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "9612991",
+    "title": "Holy Forever",
+    "artist": "CeCe Winans",
+    "video_count": 1,
+    "video_ids": [
+      "7nhpXxsjdpY"
+    ],
+    "comment_count": 57,
+    "social_valence_score": 0.6720162910131509,
+    "sentiment_counts": {
+      "enjoyment": 54,
+      "sadness": 2,
+      "other": 1
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "12021488",
+    "title": "Reggaeton",
+    "artist": "Amo",
+    "video_count": 1,
+    "video_ids": [
+      "rIJBzH_mmAo"
+    ],
+    "comment_count": 500,
+    "social_valence_score": 0.3779193695699796,
+    "sentiment_counts": {
+      "enjoyment": 364,
+      "sadness": 22,
+      "other": 71,
+      "fear": 4,
+      "disgust": 39
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "2015779",
+    "title": "Pity Party",
+    "artist": "Melanie Martinez",
+    "video_count": 1,
+    "video_ids": [
+      "6bAPlojfgO0"
+    ],
+    "comment_count": 0,
+    "social_valence_score": null,
+    "sentiment_counts": {},
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "112197",
+    "title": "I Saw Her Standing There",
+    "artist": "The Beatles",
+    "video_count": 1,
+    "video_ids": [
+      "cADFS0NU6As"
+    ],
+    "comment_count": 500,
+    "social_valence_score": 0.26700872762314976,
+    "sentiment_counts": {
+      "enjoyment": 326,
+      "disgust": 42,
+      "sadness": 32,
+      "other": 100
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "190132",
+    "title": "N.I.B.",
+    "artist": "Black Sabbath",
+    "video_count": 1,
+    "video_ids": [
+      "EoHgrlNagfg"
+    ],
+    "comment_count": 39,
+    "social_valence_score": 0.2041928470492936,
+    "sentiment_counts": {
+      "enjoyment": 27,
+      "sadness": 8,
+      "other": 4
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "5606344",
+    "title": "Chemtrails Over the Country Club",
+    "artist": "Lana Del Rey",
+    "video_count": 1,
+    "video_ids": [
+      "vBHild0PiTE"
+    ],
+    "comment_count": 500,
+    "social_valence_score": 0.11070603000931442,
+    "sentiment_counts": {
+      "enjoyment": 266,
+      "other": 109,
+      "sadness": 69,
+      "disgust": 52,
+      "fear": 4
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "415227",
+    "title": "Somewhere Over the Rainbow",
+    "artist": "Israel Kamakawiwo’ole",
+    "video_count": 1,
+    "video_ids": [
+      "V1bFr2SWP1I"
+    ],
+    "comment_count": 500,
+    "social_valence_score": 0.16547312979586423,
+    "sentiment_counts": {
+      "enjoyment": 301,
+      "other": 66,
+      "sadness": 105,
+      "disgust": 28
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "12244574",
+    "title": "Briller (Golden - version française)",
+    "artist": "HUNTR/X",
+    "video_count": 1,
+    "video_ids": [
+      "WuT1uUtM0mk"
+    ],
+    "comment_count": 0,
+    "social_valence_score": null,
+    "sentiment_counts": {},
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "65881",
+    "title": "Come Over",
+    "artist": "Aaliyah",
+    "video_count": 1,
+    "video_ids": [
+      "bhplHl2UB24"
+    ],
+    "comment_count": 26,
+    "social_valence_score": 0.27507203503941685,
+    "sentiment_counts": {
+      "enjoyment": 19,
+      "sadness": 5,
+      "other": 1,
+      "fear": 1
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "2990388",
+    "title": "One More Light",
+    "artist": "Linkin Park",
+    "video_count": 1,
+    "video_ids": [
+      "3kaUvGSLMew"
+    ],
+    "comment_count": 500,
+    "social_valence_score": -0.11675957235414534,
+    "sentiment_counts": {
+      "enjoyment": 227,
+      "sadness": 213,
+      "other": 52,
+      "disgust": 8
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "201616",
+    "title": "Home Sweet Home",
+    "artist": "Mötley Crüe",
+    "video_count": 1,
+    "video_ids": [
+      "m1P6Xtb3dU4"
+    ],
+    "comment_count": 500,
+    "social_valence_score": 0.3872495551831089,
+    "sentiment_counts": {
+      "enjoyment": 383,
+      "sadness": 37,
+      "other": 51,
+      "disgust": 28,
+      "fear": 1
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "3323308",
+    "title": "Freestyle",
+    "artist": "Lil Baby",
+    "video_count": 1,
+    "video_ids": [
+      "MHryuYVyHhk"
+    ],
+    "comment_count": 500,
+    "social_valence_score": 0.2466768776765093,
+    "sentiment_counts": {
+      "enjoyment": 315,
+      "other": 115,
+      "sadness": 42,
+      "disgust": 28
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "191643",
+    "title": "Carrying Your Love with Me",
+    "artist": "George Strait",
+    "video_count": 1,
+    "video_ids": [
+      "hUFLFIrZStU"
+    ],
+    "comment_count": 96,
+    "social_valence_score": 0.4996136309928261,
+    "sentiment_counts": {
+      "enjoyment": 77,
+      "other": 9,
+      "sadness": 7,
+      "disgust": 3
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "1784085",
+    "title": "Mal es in die Wolken",
+    "artist": "Genetikk",
+    "video_count": 1,
+    "video_ids": [
+      "6Onf0GdXkPQ"
+    ],
+    "comment_count": 194,
+    "social_valence_score": 0.2011128864827153,
+    "sentiment_counts": {
+      "enjoyment": 115,
+      "sadness": 18,
+      "other": 38,
+      "disgust": 22,
+      "fear": 1
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "444088",
+    "title": "Money Power Glory",
+    "artist": "Lana Del Rey",
+    "video_count": 1,
+    "video_ids": [
+      "BnfumBZQKyQ"
+    ],
+    "comment_count": 500,
+    "social_valence_score": 0.28845463178586217,
+    "sentiment_counts": {
+      "enjoyment": 331,
+      "disgust": 30,
+      "sadness": 48,
+      "other": 89,
+      "fear": 2
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "124030",
+    "title": "Vincent (Starry Starry Night)",
+    "artist": "Don McLean",
+    "video_count": 1,
+    "video_ids": [
+      "MhEgJqdUBcA"
+    ],
+    "comment_count": 59,
+    "social_valence_score": 0.46500169803877756,
+    "sentiment_counts": {
+      "enjoyment": 48,
+      "sadness": 8,
+      "disgust": 2,
+      "other": 1
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "2437285",
+    "title": "Let Me Love You",
+    "artist": "Ariana Grande",
+    "video_count": 1,
+    "video_ids": [
+      "xbiv2QHcGYU"
+    ],
+    "comment_count": 500,
+    "social_valence_score": 0.27734216980077325,
+    "sentiment_counts": {
+      "enjoyment": 330,
+      "disgust": 25,
+      "other": 89,
+      "sadness": 54,
+      "fear": 2
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "83863",
+    "title": "We Didn’t Start the Fire",
+    "artist": "Billy Joel",
+    "video_count": 1,
+    "video_ids": [
+      "eFTLKWw542g"
+    ],
+    "comment_count": 500,
+    "social_valence_score": -0.025464270347729325,
+    "sentiment_counts": {
+      "enjoyment": 213,
+      "other": 136,
+      "disgust": 88,
+      "sadness": 60,
+      "fear": 3
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "6261337",
+    "title": "Already Best Friends",
+    "artist": "Jack Harlow",
+    "video_count": 1,
+    "video_ids": [
+      "loKZeT1W2d8"
+    ],
+    "comment_count": 500,
+    "social_valence_score": 0.17348176914826036,
+    "sentiment_counts": {
+      "enjoyment": 295,
+      "disgust": 52,
+      "other": 103,
+      "sadness": 47,
+      "fear": 3
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "242253",
+    "title": "Tief in die Nacht",
+    "artist": "CAPO",
+    "video_count": 1,
+    "video_ids": [
+      "zbKHoOIuly4"
+    ],
+    "comment_count": 500,
+    "social_valence_score": 0.2656051081540063,
+    "sentiment_counts": {
+      "enjoyment": 310,
+      "sadness": 35,
+      "other": 135,
+      "disgust": 20
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "12175025",
+    "title": "world on fire",
+    "artist": "for KING & COUNTRY",
+    "video_count": 1,
+    "video_ids": [
+      "Dnfbpu7iSGU"
+    ],
+    "comment_count": 500,
+    "social_valence_score": 0.5240325864530169,
+    "sentiment_counts": {
+      "enjoyment": 420,
+      "disgust": 24,
+      "other": 31,
+      "sadness": 25
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "1778811",
+    "title": "Fire Away",
+    "artist": "Chris Stapleton",
+    "video_count": 1,
+    "video_ids": [
+      "z5ylHkgs6Go"
+    ],
+    "comment_count": 500,
+    "social_valence_score": 0.25948474468756466,
+    "sentiment_counts": {
+      "enjoyment": 338,
+      "other": 57,
+      "disgust": 27,
+      "sadness": 76,
+      "fear": 2
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "4046697",
+    "title": "Still on the O",
+    "artist": "Harlem Spartans",
+    "video_count": 1,
+    "video_ids": [
+      "-QezMBY0Ndk"
+    ],
+    "comment_count": 500,
+    "social_valence_score": 0.21343831228930504,
+    "sentiment_counts": {
+      "enjoyment": 321,
+      "disgust": 53,
+      "sadness": 32,
+      "other": 91,
+      "fear": 3
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "6254602",
+    "title": "Throat Baby (Go Baby) [Remix]",
+    "artist": "BRS Kash",
+    "video_count": 1,
+    "video_ids": [
+      "bpxyHy_PQuw"
+    ],
+    "comment_count": 11,
+    "social_valence_score": 0.419122402979569,
+    "sentiment_counts": {
+      "enjoyment": 8,
+      "other": 2,
+      "sadness": 1
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "2867497",
+    "title": "the song they played [when i crashed into the wall]",
+    "artist": "Lil Peep",
+    "video_count": 1,
+    "video_ids": [
+      "pX9GZUt9X6g"
+    ],
+    "comment_count": 91,
+    "social_valence_score": 0.13488825460752615,
+    "sentiment_counts": {
+      "enjoyment": 54,
+      "sadness": 23,
+      "other": 10,
+      "disgust": 4
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "10029450",
+    "title": "we can’t be friends (wait for your love)",
+    "artist": "Ariana Grande",
+    "video_count": 1,
+    "video_ids": [
+      "DhK0fZ_hs04"
+    ],
+    "comment_count": 500,
+    "social_valence_score": 0.43951002729684113,
+    "sentiment_counts": {
+      "enjoyment": 391,
+      "sadness": 61,
+      "other": 39,
+      "disgust": 9
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "3049448",
+    "title": "Kadhal cricket",
+    "artist": "Hiphop Tamizha",
+    "video_count": 1,
+    "video_ids": [
+      "xzxr6fxdI_E"
+    ],
+    "comment_count": 500,
+    "social_valence_score": 0.3716618694420904,
+    "sentiment_counts": {
+      "enjoyment": 351,
+      "other": 114,
+      "disgust": 15,
+      "sadness": 17,
+      "fear": 3
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "2463392",
+    "title": "Fire & Desire",
+    "artist": "Drake",
+    "video_count": 1,
+    "video_ids": [
+      "1ZCGBgfp_jg"
+    ],
+    "comment_count": 159,
+    "social_valence_score": 0.21418357435789592,
+    "sentiment_counts": {
+      "enjoyment": 98,
+      "other": 27,
+      "sadness": 18,
+      "disgust": 12,
+      "fear": 4
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "3296969",
+    "title": "Play With Fire",
+    "artist": "Sam Tinnesz",
+    "video_count": 1,
+    "video_ids": [
+      "yzVQkO92wNw"
+    ],
+    "comment_count": 500,
+    "social_valence_score": 0.2883610519692302,
+    "sentiment_counts": {
+      "enjoyment": 331,
+      "other": 99,
+      "disgust": 26,
+      "sadness": 43,
+      "fear": 1
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "116733",
+    "title": "Heart of Glass",
+    "artist": "Blondie",
+    "video_count": 1,
+    "video_ids": [
+      "WGU_4-5RaxU"
+    ],
+    "comment_count": 500,
+    "social_valence_score": 0.3872470612153411,
+    "sentiment_counts": {
+      "sadness": 43,
+      "enjoyment": 361,
+      "disgust": 25,
+      "other": 71
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "5014353",
+    "title": "Tokyo Drifting",
+    "artist": "Glass Animals",
+    "video_count": 1,
+    "video_ids": [
+      "ZgfYwoci2dw"
+    ],
+    "comment_count": 165,
+    "social_valence_score": 0.25571331035797346,
+    "sentiment_counts": {
+      "enjoyment": 112,
+      "disgust": 10,
+      "other": 29,
+      "sadness": 12,
+      "fear": 2
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "3756523",
+    "title": "Ghost Town",
+    "artist": "Kanye West",
+    "video_count": 1,
+    "video_ids": [
+      "qAsHVwl-MU4"
+    ],
+    "comment_count": 500,
+    "social_valence_score": 0.21395589669700713,
+    "sentiment_counts": {
+      "sadness": 97,
+      "other": 58,
+      "enjoyment": 316,
+      "disgust": 29
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "9819754",
+    "title": "EVIL J0RDAN",
+    "artist": "Playboi Carti",
+    "video_count": 1,
+    "video_ids": [
+      "zTKheLpo4nQ"
+    ],
+    "comment_count": 500,
+    "social_valence_score": 0.13301395688485354,
+    "sentiment_counts": {
+      "enjoyment": 293,
+      "disgust": 58,
+      "other": 94,
+      "sadness": 48,
+      "fear": 7
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "114915",
+    "title": "Smooth",
+    "artist": "Santana",
+    "video_count": 1,
+    "video_ids": [
+      "6Whgn_iE5uc"
+    ],
+    "comment_count": 500,
+    "social_valence_score": 0.36991368408175185,
+    "sentiment_counts": {
+      "enjoyment": 360,
+      "other": 64,
+      "disgust": 30,
+      "sadness": 43,
+      "fear": 3
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "12847673",
+    "title": "PUNK ROCKY",
+    "artist": "A$AP Rocky",
+    "video_count": 1,
+    "video_ids": [
+      "UmfDJnoEP1A"
+    ],
+    "comment_count": 304,
+    "social_valence_score": 0.24176662043732663,
+    "sentiment_counts": {
+      "sadness": 25,
+      "disgust": 33,
+      "other": 44,
+      "enjoyment": 201,
+      "fear": 1
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "7983128",
+    "title": "When I’m Alone",
+    "artist": "Post Malone",
+    "video_count": 1,
+    "video_ids": [
+      "pqg2mD7o_nU"
+    ],
+    "comment_count": 334,
+    "social_valence_score": 0.37102791285393255,
+    "sentiment_counts": {
+      "enjoyment": 239,
+      "sadness": 30,
+      "other": 48,
+      "disgust": 16,
+      "fear": 1
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "140752",
+    "title": "No New Friends",
+    "artist": "DJ Khaled",
+    "video_count": 1,
+    "video_ids": [
+      "E2Lw9YWLVts"
+    ],
+    "comment_count": 500,
+    "social_valence_score": 0.20182732461951672,
+    "sentiment_counts": {
+      "other": 102,
+      "enjoyment": 310,
+      "disgust": 31,
+      "sadness": 55,
+      "fear": 1,
+      "anger": 1
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "4712978",
+    "title": "Cruel Summer",
+    "artist": "Taylor Swift",
+    "video_count": 1,
+    "video_ids": [
+      "ic8j13piAhQ"
+    ],
+    "comment_count": 500,
+    "social_valence_score": 0.5712536922879518,
+    "sentiment_counts": {
+      "other": 42,
+      "enjoyment": 435,
+      "sadness": 15,
+      "disgust": 8
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "1972171",
+    "title": "Reggae Shark",
+    "artist": "The Key of Awesome",
+    "video_count": 1,
+    "video_ids": [
+      "A3ytTKZf344"
+    ],
+    "comment_count": 500,
+    "social_valence_score": 0.26673998323455456,
+    "sentiment_counts": {
+      "enjoyment": 319,
+      "sadness": 36,
+      "disgust": 25,
+      "other": 120
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "51812",
+    "title": "Ab-Soul’s Outro",
+    "artist": "Kendrick Lamar",
+    "video_count": 1,
+    "video_ids": [
+      "ExuUMtj7Vkc"
+    ],
+    "comment_count": 360,
+    "social_valence_score": 0.026143494230281148,
+    "sentiment_counts": {
+      "enjoyment": 174,
+      "sadness": 46,
+      "other": 80,
+      "disgust": 60
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "212703",
+    "title": "Like a Prayer",
+    "artist": "Madonna",
+    "video_count": 1,
+    "video_ids": [
+      "79fzeNUqQbQ"
+    ],
+    "comment_count": 500,
+    "social_valence_score": 0.18177018328756095,
+    "sentiment_counts": {
+      "disgust": 85,
+      "other": 75,
+      "enjoyment": 300,
+      "sadness": 39,
+      "fear": 1
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "3723124",
+    "title": "Life Goes On",
+    "artist": "Lil Baby",
+    "video_count": 1,
+    "video_ids": [
+      "qYEjwFG_Yjk"
+    ],
+    "comment_count": 9,
+    "social_valence_score": 0.22692091514666876,
+    "sentiment_counts": {
+      "enjoyment": 4,
+      "other": 5
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "80410",
+    "title": "64 mesures de spleen",
+    "artist": "Jazzy Bazz",
+    "video_count": 1,
+    "video_ids": [
+      "iKyqy8miQZI"
+    ],
+    "comment_count": 169,
+    "social_valence_score": 0.1506745344022366,
+    "sentiment_counts": {
+      "enjoyment": 92,
+      "other": 42,
+      "disgust": 20,
+      "sadness": 15
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "3909773",
+    "title": "What a Time",
+    "artist": "Julia Michaels",
+    "video_count": 1,
+    "video_ids": [
+      "bPYefBD1Rzs"
+    ],
+    "comment_count": 500,
+    "social_valence_score": 0.16088859262410551,
+    "sentiment_counts": {
+      "enjoyment": 297,
+      "disgust": 14,
+      "sadness": 118,
+      "other": 71
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "2227302",
+    "title": "Little Drummer Boy",
+    "artist": "for KING & COUNTRY",
+    "video_count": 1,
+    "video_ids": [
+      "NzEX3QMuVPM"
+    ],
+    "comment_count": 500,
+    "social_valence_score": 0.4998662403393537,
+    "sentiment_counts": {
+      "other": 57,
+      "enjoyment": 409,
+      "disgust": 10,
+      "sadness": 24
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "1375513",
+    "title": "Vi Är På Gång",
+    "artist": "Tomas Ledin",
+    "video_count": 1,
+    "video_ids": [
+      "IFeE6JWa-aM"
+    ],
+    "comment_count": 0,
+    "social_valence_score": null,
+    "sentiment_counts": {},
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "5614063",
+    "title": "Reggaetonera",
+    "artist": "Anuel AA",
+    "video_count": 1,
+    "video_ids": [
+      "Tx_63VlsIHI"
+    ],
+    "comment_count": 500,
+    "social_valence_score": 0.29839638344943525,
+    "sentiment_counts": {
+      "sadness": 26,
+      "enjoyment": 343,
+      "other": 85,
+      "disgust": 43,
+      "fear": 3
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "2909429",
+    "title": "No Goodbyes",
+    "artist": "Dua Lipa",
+    "video_count": 1,
+    "video_ids": [
+      "ZbJFDG6O8zM"
+    ],
+    "comment_count": 500,
+    "social_valence_score": 0.28330565168662,
+    "sentiment_counts": {
+      "other": 66,
+      "enjoyment": 326,
+      "sadness": 67,
+      "disgust": 41
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "663097",
+    "title": "Jet Pack Blues",
+    "artist": "Fall Out Boy",
+    "video_count": 1,
+    "video_ids": [
+      "NtgiP95ikIE"
+    ],
+    "comment_count": 500,
+    "social_valence_score": 0.11452666845638305,
+    "sentiment_counts": {
+      "sadness": 107,
+      "other": 98,
+      "enjoyment": 277,
+      "fear": 2,
+      "disgust": 16
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "112008",
+    "title": "Private Dancer",
+    "artist": "Tina Turner",
+    "video_count": 1,
+    "video_ids": [
+      "d4QnalIHlVc"
+    ],
+    "comment_count": 500,
+    "social_valence_score": 0.2265134673109278,
+    "sentiment_counts": {
+      "enjoyment": 319,
+      "other": 63,
+      "sadness": 64,
+      "disgust": 54
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "363653",
+    "title": "Persian Rugs",
+    "artist": "PARTYNEXTDOOR",
+    "video_count": 1,
+    "video_ids": [
+      "4NYGgJlY3Uw"
+    ],
+    "comment_count": 500,
+    "social_valence_score": 0.22999207263067364,
+    "sentiment_counts": {
+      "enjoyment": 323,
+      "sadness": 57,
+      "disgust": 28,
+      "other": 91,
+      "fear": 1
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "58537",
+    "title": "Purple Swag: Chapter 2",
+    "artist": "A$AP Rocky",
+    "video_count": 1,
+    "video_ids": [
+      "m6qzGaQI-X0"
+    ],
+    "comment_count": 82,
+    "social_valence_score": -0.01636504796447187,
+    "sentiment_counts": {
+      "other": 21,
+      "enjoyment": 37,
+      "sadness": 9,
+      "disgust": 14,
+      "fear": 1
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "3484874",
+    "title": "when the party’s over",
+    "artist": "Billie Eilish",
+    "video_count": 1,
+    "video_ids": [
+      "pbMwTqkKSps"
+    ],
+    "comment_count": 500,
+    "social_valence_score": 0.033943816486746076,
+    "sentiment_counts": {
+      "enjoyment": 248,
+      "other": 107,
+      "anger": 1,
+      "sadness": 102,
+      "fear": 2,
+      "disgust": 40
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "4028051",
+    "title": "Let’s Fall in Love for the Night",
+    "artist": "FINNEAS",
+    "video_count": 1,
+    "video_ids": [
+      "VaKzNtwPQxE"
+    ],
+    "comment_count": 500,
+    "social_valence_score": 0.3587086156704463,
+    "sentiment_counts": {
+      "enjoyment": 353,
+      "disgust": 27,
+      "sadness": 46,
+      "other": 74
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "5727896",
+    "title": "Lighter",
+    "artist": "Nathan Dawe",
+    "video_count": 1,
+    "video_ids": [
+      "Di0nAk2_Tpw"
+    ],
+    "comment_count": 500,
+    "social_valence_score": 0.17244259189162403,
+    "sentiment_counts": {
+      "enjoyment": 289,
+      "disgust": 44,
+      "other": 110,
+      "sadness": 56,
+      "fear": 1
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "65603",
+    "title": "Hometown Glory",
+    "artist": "Adele",
+    "video_count": 1,
+    "video_ids": [
+      "BW9Fzwuf43c"
+    ],
+    "comment_count": 500,
+    "social_valence_score": 0.20830289715807884,
+    "sentiment_counts": {
+      "other": 86,
+      "enjoyment": 309,
+      "disgust": 7,
+      "sadness": 98
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "4533523",
+    "title": "Doin’ Time",
+    "artist": "Lana Del Rey",
+    "video_count": 1,
+    "video_ids": [
+      "qolmz4FlnZ0"
+    ],
+    "comment_count": 500,
+    "social_valence_score": 0.21017815026361494,
+    "sentiment_counts": {
+      "enjoyment": 309,
+      "other": 88,
+      "disgust": 43,
+      "sadness": 59,
+      "fear": 1
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "151375",
+    "title": "Beyond",
+    "artist": "Daft Punk",
+    "video_count": 1,
+    "video_ids": [
+      "3T0NqvdUiWI"
+    ],
+    "comment_count": 500,
+    "social_valence_score": 0.2835780112491921,
+    "sentiment_counts": {
+      "enjoyment": 327,
+      "other": 88,
+      "sadness": 64,
+      "disgust": 21
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "75664",
+    "title": "Ob-La-Di, Ob-La-Da",
+    "artist": "The Beatles",
+    "video_count": 1,
+    "video_ids": [
+      "vYEY5Jmz3pU"
+    ],
+    "comment_count": 500,
+    "social_valence_score": 0.2878690161583945,
+    "sentiment_counts": {
+      "enjoyment": 350,
+      "other": 71,
+      "sadness": 48,
+      "disgust": 31
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "193975",
+    "title": "She’s Country",
+    "artist": "Jason Aldean",
+    "video_count": 1,
+    "video_ids": [
+      "ZsvR6XAl1os"
+    ],
+    "comment_count": 500,
+    "social_valence_score": 0.294633090948686,
+    "sentiment_counts": {
+      "enjoyment": 332,
+      "other": 82,
+      "disgust": 61,
+      "fear": 3,
+      "sadness": 22
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "103700",
+    "title": "Wild for the Night",
+    "artist": "A$AP Rocky",
+    "video_count": 1,
+    "video_ids": [
+      "SqqZ1ltotS8"
+    ],
+    "comment_count": 254,
+    "social_valence_score": 0.19287235593958574,
+    "sentiment_counts": {
+      "other": 44,
+      "enjoyment": 157,
+      "sadness": 22,
+      "disgust": 30,
+      "fear": 1
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "3163078",
+    "title": "Alex Jones as an Indie Folk Song",
+    "artist": "Nick Lutsko",
+    "video_count": 1,
+    "video_ids": [
+      "KGAAhzreGWw"
+    ],
+    "comment_count": 500,
+    "social_valence_score": -0.015397134495899082,
+    "sentiment_counts": {
+      "disgust": 110,
+      "other": 96,
+      "enjoyment": 232,
+      "sadness": 59,
+      "fear": 3
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  },
+  {
+    "song_id": "3435685",
+    "title": "welcome and goodbye",
+    "artist": "Dream, Ivory",
+    "video_count": 1,
+    "video_ids": [
+      "DWJh0Dny5Ug"
+    ],
+    "comment_count": 500,
+    "social_valence_score": -0.14626031819079072,
+    "sentiment_counts": {
+      "sadness": 203,
+      "enjoyment": 208,
+      "other": 63,
+      "disgust": 21,
+      "fear": 5
+    },
+    "sentiment_model": "BaoNhan/xlm-roberta-base-UITVSMEC"
+  }
+]
