@@ -12,6 +12,11 @@ from typing import Any
 
 import requests
 
+
+class AmbiguousLyricsMatch(ValueError):
+    """Multiple similarly ranked LRCLIB entries contain conflicting lyrics."""
+
+
 class LRCLibClient:
     BASE_URL = "https://lrclib.net/api"
 
@@ -34,8 +39,7 @@ class LRCLibClient:
         if not isinstance(matches, list):
             return None
 
-        best: dict[str, Any] | None = None
-        best_score = 0.0
+        candidates: list[tuple[float, dict[str, Any], str]] = []
         for match in matches:
             if not isinstance(match, dict):
                 continue
@@ -50,18 +54,28 @@ class LRCLibClient:
                     + artist_score * 0.33
                     + _similarity(album, match["albumName"]) * 0.05
                 )
-            if score > best_score:
-                best = match
-                best_score = score
+            if score < 0.85:
+                continue
+            lyrics = (match.get("plainLyrics") or "").strip()
+            if not lyrics:
+                lyrics = _plain_from_synced(match.get("syncedLyrics") or "")
+            if lyrics:
+                candidates.append((score, match, lyrics))
 
-        if best is None:
+        if not candidates:
             return None
-
-        lyrics = (best.get("plainLyrics") or "").strip()
-        if not lyrics:
-            lyrics = _plain_from_synced(best.get("syncedLyrics") or "")
-        if not lyrics:
-            return None
+        candidates.sort(key=lambda item: item[0], reverse=True)
+        best_score, best, lyrics = candidates[0]
+        for score, other, other_lyrics in candidates[1:]:
+            if best_score - score >= 0.03:
+                break
+            if (
+                str(other.get("id")) != str(best.get("id"))
+                and _lyrics_conflict(lyrics, other_lyrics)
+            ):
+                raise AmbiguousLyricsMatch(
+                    f"Conflicting LRCLIB IDs {best.get('id')} and {other.get('id')}"
+                )
 
         return {**best, "lyrics": lyrics, "match_score": round(best_score, 3)}
 
@@ -119,6 +133,19 @@ def _similarity(left: str, right: str) -> float:
     if left_normalized == right_normalized:
         return 1.0
     return SequenceMatcher(None, left_normalized, right_normalized).ratio()
+
+
+def _lyrics_conflict(left: str, right: str) -> bool:
+    """Ignore transcription variants and shorter copies of the same lyric."""
+    left_tokens = re.findall(r"\w+", left.casefold())
+    right_tokens = re.findall(r"\w+", right.casefold())
+    if not left_tokens or not right_tokens:
+        return True
+    aligned = SequenceMatcher(None, left_tokens, right_tokens, autojunk=False)
+    shorter_coverage = sum(block.size for block in aligned.get_matching_blocks()) / min(
+        len(left_tokens), len(right_tokens)
+    )
+    return shorter_coverage < 0.75
 
 
 def _plain_from_synced(synced: str) -> str:

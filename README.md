@@ -18,7 +18,8 @@ Repo được chia thành ba flow. Flow 1 (DUY) xử lý lyrics và tìm kiếm 
 ├── src/
 │   ├── data_ingestion/
 │   │   ├── spotify_crawler.py       # Lấy metadata/audio features (khung cho flow sau)
-│   │   ├── genius_crawler.py        # Lấy lyrics từ Genius (Flow 1)
+│   │   ├── genius_crawler.py        # Tìm metadata Genius, ghép lyrics qua LRCLIB
+│   │   ├── lyrics_pilot_matcher.py  # Thu thập metadata và lyrics theo manifest
 │   │   └── youtube_crawler.py       # Lấy metadata video và bình luận
 │   ├── flow1_content_mining/
 │   │   ├── ner_extractor.py         # Trích xuất artist, writer, genre
@@ -60,10 +61,10 @@ Flow 2 cần ghép mỗi video YouTube với `song_id` từ `data/raw/songs.json
 
 ```csv
 song_id,youtube_url
-2476188,https://www.youtube.com/watch?v=VIDEO_ID
+TRK_0000522,https://www.youtube.com/watch?v=VIDEO_ID
 ```
 
-Thay `2476188` bằng ID thật trong file Flow 1 và điền URL video đúng bài đó. Một bài có thể có nhiều dòng video. Collector lấy metadata, comment và giữ `song_id` trên từng comment:
+Thay `TRK_0000522` bằng `track_id` của bài trong manifest đã thu được lyrics và điền URL video đúng bài đó. Một bài có thể có nhiều dòng video. Collector lấy metadata, comment và giữ `song_id` trên từng comment:
 
 ```bash
 python -m src.data_ingestion.youtube_crawler \
@@ -127,15 +128,27 @@ Mỗi dòng `semantic_vectors.jsonl` có `song_id`, `title`, `artist`, `writers`
 
 Mặc định SBERT dùng `sentence-transformers/all-MiniLM-L6-v2`. Có thể đổi bằng biến môi trường `SBERT_MODEL`. Pipeline yêu cầu trường `song_id` và `lyrics`; metadata còn thiếu được ghi thành giá trị rỗng. `search.py` cung cấp tìm kiếm theo ngữ nghĩa và bộ lọc artist/writer/genre. TF-IDF và SBERT tìm kiếm bằng cosine similarity, sắp xếp kết quả giảm dần.
 
-### Lấy mẫu bài từ Genius và chạy Flow 1
+### Thu thập bài hát từ manifest pilot
 
-Đặt `GENIUS_ACCESS_TOKEN` trong `.env` để tìm metadata qua Genius Developer API:
+Chép `lyrics_pilot_manifest.csv` vào `data/raw/` và đặt `GENIUS_ACCESS_TOKEN` trong `.env`. Chạy bước thu thập độc lập:
 
-```bash
-python -m src.flow1_content_mining.run_random --count 100
+```powershell
+python -m src.data_ingestion.lyrics_pilot_matcher
 ```
 
-Lệnh này lấy metadata bài hát qua Genius Developer API, tìm lyrics khớp trên LRCLIB, lưu dữ liệu thô vào `data/raw/songs.json`, rồi tạo artifact ở `data/processed/`. Đây là mẫu từ kết quả tìm kiếm, không phải mẫu ngẫu nhiên trên toàn bộ Genius. LRCLIB có thể không có lời cho một số bài nên số lượng đầu ra có thể thấp hơn yêu cầu. Dữ liệu thô ghi `metadata_source`, `lyrics_source`, ID và URL của hai nguồn. Có thể truyền `--seed 42` để tái lập thứ tự mẫu trong cùng tập tìm kiếm. Không commit dữ liệu lyrics lên GitHub.
+Crawler tìm từng cặp `artist_name`/`track_name` trên Genius (ưu tiên `search_query` trong CSV), rồi đối sánh lyrics qua LRCLIB. `data/raw/songs.json` chỉ gồm các bài có lyrics đã xác minh; `song_id` bằng `track_id` trong manifest, còn `genius_id` giữ ID nguồn. Mỗi bài trong file này có `status: success` và `match_confidence >= 0.85`.
+
+`data/processed/lyrics_pilot_results.csv` giữ đủ các dòng manifest và thêm `status`, `attempt_count`, `retry_exhausted`, điểm đối sánh và chi tiết lỗi. `status` dùng các mã: `pending` (chưa tra), `success` (lyrics khớp rõ, điểm tối thiểu 0,85), `not_found` (không có kết quả khớp), `ambiguous` (nhiều kết quả xung đột) và `error` (lỗi API hoặc xử lý). `metadata_only` dành cho Strategy B, hiện chưa bật. `not_found` và `ambiguous` không được thử lại tự động; `error` được thử tối đa 3 lần rồi giữ nguyên để kiểm tra. Chạy lại lệnh để tiếp tục các bài lỗi còn lượt thử; dùng `--retry-ambiguous` để kiểm tra lại bài mơ hồ hoặc `--retry-failed` để thử lại tất cả các trạng thái đã dừng. Có thể dùng `--input` để chỉ định CSV ở nơi khác, `--limit 5` để thử vài bài và `--max-attempts` để đổi số lần thử lỗi API.
+
+### Thu thập và chạy Flow 1
+
+Để thu thập rồi tạo artifact Flow 1 trong một lệnh:
+
+```powershell
+python -m src.flow1_content_mining.run_manifest
+```
+
+Flow 1 xử lý các bài trong manifest đã tìm được lyrics; số bài có thể ít hơn số dòng CSV nếu Genius hoặc LRCLIB không có kết quả phù hợp. Không commit dữ liệu lyrics lên GitHub.
 
 ## Thành viên và phân công flow
 
